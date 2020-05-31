@@ -14,6 +14,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # This app was created using React by the amazing people at Facebook
 
+The waiting place…Everyone is just waiting. NO that's not for you. Oh the places we'll go! Ready for anything under the sky: hope the Seuss family doesn't sue but hope you all enjoy a stroll down a nostalgic road and meet things that scare you right out of your pants.
+
 # Tutorial provided by Udemy [ COURSE NAME ] 
 This app was a learning experience and it should be! Thanks to [ name ] -- a long 8 hours but a great instructor. 
 
