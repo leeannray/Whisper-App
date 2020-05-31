@@ -19,4 +19,4 @@ This app was a learning experience and it should be! Thanks to [ name ] -- a lon
 
 # Tutorial here [ video or min walkthrough ]
 
-# Lets start: [ step by step for directories and files: let's go ]
+# Lets start: [ step by step for directories and files: you are the guide--you'll decide what direction to go! ]
