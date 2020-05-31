@@ -1,5 +1,11 @@
 # Whisper-App
-Whisper-ma-phone: a react and redux social app (for us seuss fans)…
+
+Whisper-ma-phone: a react and redux social app (for us seuss fans)…you're the guide. Don't go down some not-so-smart street. Oh, the heights we'll reach: whisper-ma-phone (a very legitimate quote by doctor seuss himself.) 
+
+Do you dare to go in?
+
+https://www.youtube.com/watch?v=fmOCyP4VyP4
+[ pic of seuss 'whisper-ma-phone: legit quote from seuss' ]
 
 Congratulations. Today is your day. 
 
