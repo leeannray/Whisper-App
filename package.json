@@ -1,0 +1,8 @@
+{
+  "name": "Whisper-App",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/leenorman/Whisper-App.git",
+  "author": "Lee Ann Norman <leeann.norm@gmail.com>",
+  "license": "MIT"
+}
