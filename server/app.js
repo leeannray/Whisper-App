@@ -1,9 +1,9 @@
 const express = require('express')
 const app = express()
 const PORT = 8000
-// port for server
+// port for server: DEFAULT IS PORT 3000 --> RUNNING
 
-const customMiddleware = () => {
+const customMiddleware = (req, res, next) => {
   console.log("in the middle")
   // middleware modify request (user) before reaching route handler
   next()
