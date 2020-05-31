@@ -20,7 +20,9 @@ Ready for anything under the sky: hope the Seuss family doesn't sue but hope you
 
 Be sure when you step...and just never forget to be dextrous..and NEVER mix up your left right foot for your left. 
 
-The places we can go. Welcome to the waiting room.
+The places we can go. Welcome to the waiting room. 
+
+*excuse me, what time is it? my swatch says 1994. do you know when the bus comes?*
 
 # Tutorial provided by Udemy [ COURSE NAME ] 
 This app was a learning experience and it should be! Thanks to [ name ] -- a long 8 hours but a great instructor. 
