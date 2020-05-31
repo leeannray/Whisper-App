@@ -1,27 +1,20 @@
 {
-  "name": "seuss-app",
+  "name": "server",
   "version": "1.0.0",
-  "description": "Seuss App",
-  "main": "server.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/leenorman/Whisper-App"
-  },
-  "author": "Lee Ann Norman",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/leenorman/Whisper-App"
-  },
-  "homepage": "https://github.com/leenorman/Whisper-App",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.16"
-  },
-  "devDependencies": {}
+    "mongoose": "^5.9.7",
+    "nodemailer": "^6.4.6",
+    "nodemailer-sendgrid-transport": "^0.2.0"
+  }
 }
