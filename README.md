@@ -14,3 +14,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # This app was created using React by the amazing people at Facebook
 
+# Tutorial provided by Udemy [ COURSE NAME ] 
+This app was a learning experience and it should be! Thanks to [ name ] -- a long 8 hours but a great instructor. 
+
+# Tutorial here [ video or min walkthrough ]
+
+# Lets start: [ step by step for directories and files: let's go ]
