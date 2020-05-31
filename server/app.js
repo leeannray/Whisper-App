@@ -6,6 +6,10 @@ const PORT = 8000
 const customMiddleware = () => {
   console.log("in the middle")
   // middleware modify request (user) before reaching route handler
+  next()
+  // execute prior MW or next MW. request to / route
+
+  // try server
 }
 
 app.get('/', (req, res) =>
