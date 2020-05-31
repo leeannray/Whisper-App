@@ -3,6 +3,10 @@ const app = express()
 const PORT = 8000
 // port for server
 
+const customMiddleware = () => {
+  console.log("in the middle")
+}
+
 app.get('/', (req, res) =>
 {
   res.send("hey seussers")
