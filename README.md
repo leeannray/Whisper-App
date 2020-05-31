@@ -2,7 +2,7 @@
 
 Whisper-ma-phone: a react and redux social app (for us seuss fans)…you're the guide. Don't go down some not-so-smart street. Oh, the heights we'll reach: whisper-ma-phone (a very legitimate quote by doctor seuss himself.) 
 
-Do you dare to go in?
+Do you dare to go in? 
 
 https://www.youtube.com/watch?v=fmOCyP4VyP4
 [ pic of seuss 'whisper-ma-phone: legit quote from seuss' ]
@@ -11,18 +11,26 @@ Congratulations. Today is your day.
 
 Welcome to whisper-ma-phone: an app to take you places...oh the places you'll go. Here's what I had in mind:
 
-AS A developer I want to create an app to connect millenials with one another through posts that share personal photos, comments, and private messages or chat rooms
-SO THAT they can receive a positive and encouraging message during this unique time in our history and feel less distanced from one another through a more positive platform
-IN ORDER TO walk through how to develop a React app (for developers) while also instilling a more positive social media message for our generation and others (including those who will, in the future, develop similar apps)
-SO THAT all of us 90's kids can be more connected, empowered, and motivated
+AS A developer I want to create an app to connect millenials with one another through posts that are secure/private (via validation and authentication methods) to share personal photos, comments, and private messages or chat rooms
+SO THAT they can share positive messages during this unique time in our history through unique usernames, personal photos, posts, and ability to know what friends and potential new friends are up to in real-time
+IN ORDER TO walk through how to develop a React app (for developers) while also instilling a more positive social media message for our generation and others (including those who will, in the future, develop similar apps) via React
+SO THAT all of us 90's kids can be more connected, empowered, and motivated through an MERN app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# This app was created using React by the amazing people at Facebook
+AND:
 
-The waiting place…Everyone is just waiting. NO that's not for…us? Oh the places we'll go! 
+# This app was created using React by the amazing people at Facebook: many thanks
 
-Ready for anything under the sky: hope the Seuss family doesn't sue but hope you all enjoy a stroll down a nostalgic lane.
+The waiting place…
+
+Everyone is just waiting. NO that's not for…us? We've got places to go. 
+
+# Credit
+
+Thank you Seuss family. Developers: hope this helps--oh the places we can go. Users: all alone--we are quite a lot. Scary [explitive] BUT--,sure--sometimes we go on and on … like this README? So, why are you still reading. Get on your way.
+
+# Still reading?
 
 Be sure when you step...and just never forget to be dextrous..and NEVER mix up your left right foot for your left. 
 
