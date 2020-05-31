@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const PORT = 8000
-// port for server: DEFAULT IS PORT 3000 --> RUNNING
+// port for server: DEFAULT IS PORT 3000 -->
 
 const customMiddleware = (req, res, next) => {
   console.log("in the middle")
