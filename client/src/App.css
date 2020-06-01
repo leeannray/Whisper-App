@@ -5,14 +5,25 @@ a {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+nav {
+  background-color: white;
+  color: red;
+}
+
+div {
+  background-image: url('../src/img/ralph-kayden-iZEG_9jaB40-unsplash.jpg')
+}
+
 .brand-logo,
 h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
 .mycard {
+  background-color: whitesmoke;
+  color: red;
   margin-top: 30px;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .auth-card {
@@ -24,14 +35,14 @@ h2 {
 }
 
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid rgb(8, 93, 252) !important;
-  box-shadow: 0 1px 0 0 rgb(8, 93, 252) !important;
+  border-bottom: 1px solid darkgrey !important;
+  box-shadow: 0 1px 0 0 darkgray !important;
   font-family: 'Montserrat', sans-serif;
 }
 
 .input-field input[type=password]:focus {
-  border-bottom: 1px solid rgb(8, 93, 252) !important;
-  box-shadow: 0 1px 0 0 rgb(8, 93, 252) !important;
+  border-bottom: 1px solid darkgray !important;
+  box-shadow: 0 1px 0 0 darkgray !important;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -50,6 +61,8 @@ h2 {
   height: max-content;
   margin: 26px auto;
   font-family: 'Montserrat', sans-serif;
+  background-color: whitesmoke;
+  color: rgba(43, 41, 41, 0.952)
 
 }
 
