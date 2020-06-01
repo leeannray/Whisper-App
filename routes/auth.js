@@ -1,134 +1,145 @@
 const express = require('express')
 const router = express.Router()
 const mongoose = require('mongoose')
-const requireLogin  = require('../middleware/requireLogin')
-const Post =  mongoose.model("Post")
+const User = mongoose.model("User")
+const crypto = require('crypto')
+const bcrypt = require('bcryptjs')
+const jwt = require('jsonwebtoken')
+const {JWT_SECRET} = require('../config/keys')
+const requireLogin = require('../middleware/requireLogin')
+const nodemailer = require('nodemailer')
+const sendgridTransport = require('nodemailer-sendgrid-transport')
+const {SENDGRID_API,EMAIL} = require('../config/keys')
+//
 
 
-router.get('/allpost',requireLogin,(req,res)=>{
-    Post.find()
-    .populate("postedBy","_id name")
-    .populate("comments.postedBy","_id name")
-    .sort('-createdAt')
-    .then((posts)=>{
-        res.json({posts})
+const transporter = nodemailer.createTransport(sendgridTransport({
+    auth:{
+        api_key:SENDGRID_API
+    }
+}))
+
+router.post('/signup',(req,res)=>{
+  const {name,email,password,pic} = req.body 
+  if(!email || !password || !name){
+     return res.status(422).json({error:"please add all the fields"})
+  }
+  User.findOne({email:email})
+  .then((savedUser)=>{
+      if(savedUser){
+        return res.status(422).json({error:"user already exists with that email"})
+      }
+      bcrypt.hash(password,12)
+      .then(hashedpassword=>{
+            const user = new User({
+                email,
+                password:hashedpassword,
+                name,
+                pic
+            })
+    
+            user.save()
+            .then(user=>{
+                // transporter.sendMail({
+                //     to:user.email,
+                //     from:"no-reply@insta.com",
+                //     subject:"signup success",
+                //     html:"<h1>welcome to instagram</h1>"
+                // })
+                res.json({message:"saved successfully"})
+            })
+            .catch(err=>{
+                console.log(err)
+            })
+      })
+     
+  })
+  .catch(err=>{
+    console.log(err)
+  })
+})
+
+
+router.post('/signin',(req,res)=>{
+    const {email,password} = req.body
+    if(!email || !password){
+       return res.status(422).json({error:"please add email or password"})
+    }
+    User.findOne({email:email})
+    .then(savedUser=>{
+        if(!savedUser){
+           return res.status(422).json({error:"Invalid Email or password"})
+        }
+        bcrypt.compare(password,savedUser.password)
+        .then(doMatch=>{
+            if(doMatch){
+                // res.json({message:"successfully signed in"})
+               const token = jwt.sign({_id:savedUser._id},JWT_SECRET)
+               const {_id,name,email,followers,following,pic} = savedUser
+               res.json({token,user:{_id,name,email,followers,following,pic}})
+            }
+            else{
+                return res.status(422).json({error:"Invalid Email or password"})
+            }
+        })
+        .catch(err=>{
+            console.log(err)
+        })
+    })
+})
+
+
+router.post('/reset-password',(req,res)=>{
+     crypto.randomBytes(32,(err,buffer)=>{
+         if(err){
+             console.log(err)
+         }
+         const token = buffer.toString("hex")
+         User.findOne({email:req.body.email})
+         .then(user=>{
+             if(!user){
+                 return res.status(422).json({error:"User dont exists with that email"})
+             }
+             user.resetToken = token
+             user.expireToken = Date.now() + 3600000
+             user.save().then((result)=>{
+                 transporter.sendMail({
+                     to:user.email,
+                     from:"no-replay@insta.com",
+                     subject:"password reset",
+                     html:`
+                     <p>You requested for password reset</p>
+                     <h5>click in this <a href="${EMAIL}/reset/${token}">link</a> to reset password</h5>
+                     `
+                 })
+                 res.json({message:"check your email"})
+             })
+
+         })
+     })
+})
+
+
+router.post('/new-password',(req,res)=>{
+    const newPassword = req.body.password
+    const sentToken = req.body.token
+    User.findOne({resetToken:sentToken,expireToken:{$gt:Date.now()}})
+    .then(user=>{
+        if(!user){
+            return res.status(422).json({error:"Try again session expired"})
+        }
+        bcrypt.hash(newPassword,12).then(hashedpassword=>{
+           user.password = hashedpassword
+           user.resetToken = undefined
+           user.expireToken = undefined
+           user.save().then((saveduser)=>{
+               res.json({message:"password updated success"})
+           })
+        })
     }).catch(err=>{
         console.log(err)
     })
-    
 })
 
-router.get('/getsubpost',requireLogin,(req,res)=>{
-
-    // if postedBy in following
-    Post.find({postedBy:{$in:req.user.following}})
-    .populate("postedBy","_id name")
-    .populate("comments.postedBy","_id name")
-    .sort('-createdAt')
-    .then(posts=>{
-        res.json({posts})
-    })
-    .catch(err=>{
-        console.log(err)
-    })
-})
-
-router.post('/createpost',requireLogin,(req,res)=>{
-    const {title,body,pic} = req.body 
-    if(!title || !body || !pic){
-      return  res.status(422).json({error:"Plase add all the fields"})
-    }
-    req.user.password = undefined
-    const post = new Post({
-        title,
-        body,
-        photo:pic,
-        postedBy:req.user
-    })
-    post.save().then(result=>{
-        res.json({post:result})
-    })
-    .catch(err=>{
-        console.log(err)
-    })
-})
-
-router.get('/mypost',requireLogin,(req,res)=>{
-    Post.find({postedBy:req.user._id})
-    .populate("PostedBy","_id name")
-    .then(mypost=>{
-        res.json({mypost})
-    })
-    .catch(err=>{
-        console.log(err)
-    })
-})
-
-router.put('/like',requireLogin,(req,res)=>{
-    Post.findByIdAndUpdate(req.body.postId,{
-        $push:{likes:req.user._id}
-    },{
-        new:true
-    }).exec((err,result)=>{
-        if(err){
-            return res.status(422).json({error:err})
-        }else{
-            res.json(result)
-        }
-    })
-})
-router.put('/unlike',requireLogin,(req,res)=>{
-    Post.findByIdAndUpdate(req.body.postId,{
-        $pull:{likes:req.user._id}
-    },{
-        new:true
-    }).exec((err,result)=>{
-        if(err){
-            return res.status(422).json({error:err})
-        }else{
-            res.json(result)
-        }
-    })
-})
-
-
-router.put('/comment',requireLogin,(req,res)=>{
-    const comment = {
-        text:req.body.text,
-        postedBy:req.user._id
-    }
-    Post.findByIdAndUpdate(req.body.postId,{
-        $push:{comments:comment}
-    },{
-        new:true
-    })
-    .populate("comments.postedBy","_id name")
-    .populate("postedBy","_id name")
-    .exec((err,result)=>{
-        if(err){
-            return res.status(422).json({error:err})
-        }else{
-            res.json(result)
-        }
-    })
-})
-
-router.delete('/deletepost/:postId',requireLogin,(req,res)=>{
-    Post.findOne({_id:req.params.postId})
-    .populate("postedBy","_id")
-    .exec((err,post)=>{
-        if(err || !post){
-            return res.status(422).json({error:err})
-        }
-        if(post.postedBy._id.toString() === req.user._id.toString()){
-              post.remove()
-              .then(result=>{
-                  res.json(result)
-              }).catch(err=>{
-                  console.log(err)
-              })
-        }
-    })
-})
 
 module.exports = router
