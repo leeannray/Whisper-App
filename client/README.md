@@ -6,7 +6,9 @@ Today is your day.
 
 Welcome to the waiting room… 
 
-Whisper-Ma-Phone:
+# USER STORY
+
+Whisper-Ma-Phone -- Our place.
 
 AS A developer I want to create an app to connect millenials with one another through posts that are secure/private (via validation and authentication methods) to share personal photos, comments, and private messages or chat rooms
 I WANT TO create an app for users to connect with one another through personal profiles
