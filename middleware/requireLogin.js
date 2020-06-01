@@ -1,6 +1,6 @@
 
 const jwt = require('jsonwebtoken');
-const { JWT_SECRET } = require('../config/keys');
+const {JWT_SECRET} = require('../config/keys');
 const mongoose = require('mongoose');
 const User = mongoose.model("User");
 
@@ -21,7 +21,6 @@ module.exports = (req,res,next)=>{
         User.findById(_id).then(userdata=>{
             req.user = userdata
             next();
-            // next will go to next middleware
         });        
     });
 }

@@ -2,16 +2,16 @@ import React,{useEffect,createContext,useReducer,useContext} from 'react';
 import NavBar from './components/Navbar'
 import "./App.css"
 import {BrowserRouter,Route,Switch,useHistory} from 'react-router-dom'
-import Home from '../../../../Desktop/whisperappfp/Whisper-App/client/src/components/screens/Home'
+import Home from './components/screens/Home'
 import Signin from './components/screens/SignIn'
 import Profile from './components/screens/Profile'
-import Signup from '../../../../Desktop/whisperappfp/Whisper-App/client/src/components/screens/Signup'
-import CreatePost from '../../../../Desktop/whisperappfp/Whisper-App/client/src/components/screens/CreatePost'
+import Signup from './components/screens/Signup'
+import CreatePost from './components/screens/CreatePost'
 import {reducer,initialState} from './reducers/userReducer'
 import UserProfile from './components/screens/UserProfile'
 import SubscribedUserPosts from './components/screens/SubscribesUserPosts'
-import Reset from '../../../../Desktop/whisperappfp/Whisper-App/client/src/components/screens/Reset'
-import NewPassword from '../../../../Desktop/whisperappfp/Whisper-App/client/src/components/screens/Newpassword'
+import Reset from './components/screens/Reset'
+import NewPassword from './components/screens/Newpassword'
 export const UserContext = createContext()
 
 

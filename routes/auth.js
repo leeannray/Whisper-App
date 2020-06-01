@@ -16,7 +16,7 @@ const jwt = require('jsonwebtoken');
 const { JWT_SECRET } = require('../config/keys');
 
 // adding middleware to verify token
-const requireLogin = require('../../../../Downloads/Project 3 5/middleware/requireLogin');
+const requireLogin = require('../middleware/requireLogin');
 //
 
 const transporter = nodemailer.createTransport(sendgridTransport({
