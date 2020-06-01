@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
-const requireLogin  = require('../middleware/requireLogin');
+const requireLogin  = require('../../../../Downloads/Project 3 5/middleware/requireLogin');
 const Post =  mongoose.model("Post");
 
 // get the all post
