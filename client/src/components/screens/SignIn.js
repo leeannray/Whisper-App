@@ -1,5 +1,5 @@
-import React,{ useState, useContext } from 'react'
-import { Link, useHistory} from 'react-router-dom'
+import React, { useState, useContext } from 'react'
+import { Link, useHistory } from 'react-router-dom'
 import { UserContext } from '../../App'
 import M from 'materialize-css'
 
@@ -8,19 +8,18 @@ const SignIn  = () => {
     const history = useHistory()
     const [password, setPasword] = useState("")
     const [email, setEmail] = useState("")
-    const PostData = () => {
-        //allowable characters
-        if(!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email)) {
-            M.toast({ html: "invalid email", classes:"#c62828 red darken-3" })
+    const PostData = ( )=> {
+        if (!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email))
+        //characters allowable
+        {
+            M.toast({ html: "invalid email", classes: "#c62828 red darken-3" })
             return
         }
-
         fetch("/signin", {
             method:"post",
             headers: {
                 "Content-Type": "application/json"
             },
-
             body:JSON.stringify({
                 password,
                 email
@@ -30,17 +29,17 @@ const SignIn  = () => {
         .then(data => {
             console.log(data)
            if(data.error) {
-              M.toast({ html: data.error, classes:"#c62828 red darken-3" })
+              M.toast({ html: data.error, classes: "#c62828 red darken-3"} )
            }
            else{
                localStorage.setItem("jwt", data.token)
                localStorage.setItem("user", JSON.stringify(data.user))
-               dispatch({ type: "USER", payload: data.user })
+               dispatch({ type:"USER", payload:data.user })
                M.toast({ html:"signedin success", classes:"#43a047 green darken-1" })
                history.push('/')
            }
         })
-             .catch(err => {
+            .catch(err => {
             console.log(err)
         })
     }
@@ -50,23 +49,23 @@ const SignIn  = () => {
             <h2>Whisper</h2>
             <input
             type="text"
-            placeholder="Email please…"
+            placeholder="email"
             value={ email }
-            onChange={ (e) => setEmail(e.target.value) }
+            onChange={(e) => setEmail(e.target.value)}
             />
             <input
             type="password"
-            placeholder="Passphrase please…"
+            placeholder="sssshhhhhh…passphrase"
             value={ password }
             onChange={ (e) => setPasword(e.target.value) }
             />
             <button className="btn waves-effect waves-light #64b5f6 blue darken-1"
             onClick={ () => PostData() }
             >
-                Check in
+                Enter
             </button>
             <h5>
-                <Link to="/signup">First timer?</Link>
+                <Link to="/signup">Want to check in?</Link>
             </h5>
             <h6>
                 <Link to="/reset">We all forget…</Link>
