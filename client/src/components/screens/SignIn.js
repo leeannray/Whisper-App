@@ -60,12 +60,14 @@ const SignIn = () => {
                 >
                     Check In!
             </button>
+                <div id="checkIn">
                 <h5>
                     <Link to="/signup">Have you been here before? Register here to join waiting place…</Link>
                 </h5>
                 <h6>
                     <Link to="/reset">Forget your email or passphrase? Click here!</Link>
-                </h6>
+                    </h6>
+                    </div>
 
             </div>
         </div>
