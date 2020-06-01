@@ -10,8 +10,7 @@ Whisper-Ma-Phone:
 
 AS A developer I want to create an app to connect millenials with one another through posts that are secure/private (via validation and authentication methods) to share personal photos, comments, and private messages or chat rooms
 SO THAT they can share positive messages during this unique time in our history through unique usernames, personal photos, posts, and ability to know what friends and potential new friends are up to in real-time
-IN ORDER TO walk through how to develop a React app (for developers) while also instilling a more positive social media message for our generation and others (including those who will, in the future, develop similar apps) via React
-SO THAT all of us 90's kids can be more connected, empowered, and motivated through an MERN app
+IN ORDER TO walk through how to develop a React app (for developers) while also allowing users to connect with eachother through chatrooms/messages, photos, and posts
 
 # This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
