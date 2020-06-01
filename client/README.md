@@ -9,6 +9,7 @@ Welcome to the waiting room…
 Whisper-Ma-Phone:
 
 AS A developer I want to create an app to connect millenials with one another through posts that are secure/private (via validation and authentication methods) to share personal photos, comments, and private messages or chat rooms
+I WANT TO create an app for users to connect with one another through personal profiles
 SO THAT they can share positive messages during this unique time in our history through unique usernames, personal photos, posts, and ability to know what friends and potential new friends are up to in real-time
 IN ORDER TO walk through how to develop a React app (for developers) while also allowing users to connect with eachother through chatrooms/messages, photos, and posts
 
