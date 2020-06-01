@@ -19,9 +19,13 @@
   "homepage": "https://github.com/leenorman/whisper-react",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.21.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.16"
+    "mongo": "^0.1.0",
+    "mongoose": "^5.9.16",
+    "mongouri": "0.0.0",
+    "nodemon": "^2.0.4"
   },
   "devDependencies": {}
 }
