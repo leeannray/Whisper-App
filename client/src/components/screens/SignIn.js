@@ -1,4 +1,4 @@
-import React, { useState, useContext, } from 'react'
+import React, { useState, useContext } from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { UserContext } from '../../App'
 import M from 'materialize-css'
@@ -42,7 +42,7 @@ const SignIn = () => {
     return (
         <div className="mycard">
             <div className="card auth-card input-field">
-                <h2>Instagram</h2>
+                <h2>Whisper…</h2>
                 <input
                     type="text"
                     placeholder="email"
