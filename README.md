@@ -1,10 +1,11 @@
 # Whisper-App: Waiting Place
 
-Whisper-ma-phone: a react and redux social app for kids.
+Whisper: a react and redux social app for kids.
 
-Today is your day. 
+"Whisper-ma-phone"--Dr. Seuss
 
 # This app covers:
+
 Building websites using MERN stack
 Image Uploading
 Creating APIs in Node js
@@ -15,6 +16,10 @@ Deploy to heroku
 Sending Email using nodemailer & sendgrid
 Forgot & Reset password
 
+# This app uses:
+  - Cloudinary
+  - MongoDb Atlas
+  - Materialize
 
 # USER STORY
 
@@ -37,6 +42,8 @@ ALSO:
 - React
 - Stephen Grider (Udemy)
 - Mukesh Phulwani (Udemy)
+- Dr. Seuss
+- The React team at Facebook
 
 ## Available Scripts
 
