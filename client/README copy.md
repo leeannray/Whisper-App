@@ -1,11 +1,42 @@
-Congratulations. Today is your day. 
+# Whisper-App
 
-Welcome to whisper-ma-phone: an app to take you places...oh the places you'll go. Here's what I had in mind:
+Whisper-ma-phone: a react and redux social app.
 
-AS A developer I want to create an app to connect millenials with one another through posts that share personal photos, comments, and private messages or chat rooms
-SO THAT they can receive a positive and encouraging message during this unique time in our history and feel less distanced from one another through a more positive platform
-IN ORDER TO walk through how to develop a React app (for developers) while also instilling a more positive social media message for our generation and others (including those who will, in the future, develop similar apps)
-SO THAT all of us 90's kids can be more connected, empowered, and motivated
+Today is your day. 
+
+Welcome to the waiting room… 
+
+# USER STORY
+
+Whisper-Ma-Phone -- Our place.
+
+AS A developer I want to create an app to connect millenials with one another through posts that are secure/private (via validation and authentication methods) to share personal photos, comments, and private messages or chat rooms
+I WANT TO create an app for users to connect with one another through personal profiles
+SO THAT they can share positive messages during this unique time in our history through unique usernames, personal photos, posts, and ability to know what friends and potential new friends are up to in real-time
+IN ORDER TO walk through how to develop a React app (for developers) while also allowing users to connect with eachother through chatrooms/messages, photos, and posts
+
+# This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+AND:
+
+# This app was created using React by the amazing people at Facebook: many thanks
+
+The waiting place…
+
+
+# Credit
+
+
+
+
+
+
+# Tutorial provided by Udemy [ COURSE NAME ] 
+This app was a learning experience and it should be! Thanks to [ name ] -- a long 8 hours but a great instructor. 
+
+# Tutorial here [ video or min walkthrough ]
+
+# Lets start: [ step by step for directories and files: you are the guide--you'll decide what direction to go! ]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
