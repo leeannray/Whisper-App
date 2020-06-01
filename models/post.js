@@ -1,32 +1,27 @@
 const mongoose = require('mongoose')
-const { ObjectId } = mongoose.Schema.Types
-
-const postSchema = new mongoose.Schema( {
-    title: {
-        type: String,
-        required: true
+const {ObjectId} = mongoose.Schema.Types
+const postSchema = new mongoose.Schema({
+    title:{
+        type:String,
+        required:true
     },
-    body: {
-        type: String,
-        required: true
+    body:{
+        type:String,
+        required:true
     },
-    photo: {
-        type: String,
-        required: true
+    photo:{
+        type:String,
+        required:true
     },
-    likes:[{ type: ObjectId, ref: "User" }],
+    likes:[{type:ObjectId,ref:"User"}],
     comments:[{
-        text: String,
-        postedBy: { type: ObjectId, ref: "User" }
+        text:String,
+        postedBy:{type:ObjectId,ref:"User"}
     }],
-    postedBy: {
-       type: ObjectId,
-       ref: "User"
+    postedBy:{
+       type:ObjectId,
+       ref:"User"
     }
-},
-    { timestamps: true }
-    // true time
-)
+},{timestamps:true})
 
-mongoose.model("Post", postSchema)
-// second arg?
+mongoose.model("Post",postSchema)
