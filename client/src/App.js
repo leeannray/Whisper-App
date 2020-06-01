@@ -1,20 +1,28 @@
-import React,{useEffect,createContext,useReducer,useContext} from 'react';
-import NavBar from './components/Navbar'
+
+import React, { useEffect, createContext, useReducer, useContext } from 'react'
+//react dom
+import { BrowserRouter, Route, Switch, useHistory } from 'react-router-dom'
+
+//css
 import "./App.css"
-import {BrowserRouter,Route,Switch,useHistory} from 'react-router-dom'
+
+//reducer
+import { reducer, initialState } from './reducers/userReducer'
+
+//components
+import NavBar from './components/Navbar'
 import Home from './components/screens/Home'
 import Signin from './components/screens/SignIn'
 import Profile from './components/screens/Profile'
 import Signup from './components/screens/Signup'
 import CreatePost from './components/screens/CreatePost'
-import {reducer,initialState} from './reducers/userReducer'
 import UserProfile from './components/screens/UserProfile'
 import SubscribedUserPosts from './components/screens/SubscribesUserPosts'
 import Reset from './components/screens/Reset'
 import NewPassword from './components/screens/Newpassword'
 export const UserContext = createContext()
 
-
+//Routing function
 const Routing = ()=>{
   const history = useHistory()
   const {state,dispatch} = useContext(UserContext)
@@ -27,7 +35,8 @@ const Routing = ()=>{
            history.push('/signin')
     }
   },[])
-  return(
+  return (
+    //using switch path
     <Switch>
       <Route exact path="/" >
       <Home />
@@ -61,6 +70,8 @@ const Routing = ()=>{
   )
 }
 
+
+//app component
 function App() {
   const [state,dispatch] = useReducer(reducer,initialState)
   return (

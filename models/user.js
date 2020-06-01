@@ -17,7 +17,7 @@ const userSchema = new mongoose.Schema({
     expireToken:Date,
     pic:{
      type:String,
-     default:"https://carpetsbyconrad.com/wp-content/uploads/2017/08/kratudesai.jpg"
+     default:"../client/src/img/annie-spratt-qyAka7W5uMY-unsplash.jpg"
     },
     followers:[{type:ObjectId,ref:"User"}],
     following:[{type:ObjectId,ref:"User"}]
