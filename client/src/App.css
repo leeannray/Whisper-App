@@ -72,6 +72,10 @@ nav {
 .btn {
   margin: 10px 10px;
   background-color: white;
+  border-radius: 20px;
+  width: 20vw;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
   
 }
 

@@ -4,7 +4,7 @@ Whisper: an MERN, react and redux, social app for kids.
 
 "Whisper-ma-phone"--Dr. Seuss
 
-# This app covers:
+# This app covers
 
 Building websites using MERN stack
 Image Uploading
