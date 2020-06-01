@@ -1,175 +1,60 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 
-body {
-  background-color: white;
+a{
+  color: black !important;
 }
 
-nav {
-  background-color: white;
-  color: #263238;
-}
-.mycard {
-    background: rgb(240,240,245);
-    height: 100vh;
-    /*border: 5px solid rgb(250,250,250);*/
-     box-shadow: -4px -4px 0px rgb(254,254,255),
-                 4px 4px 0px rgb(200,200,220);
-    border-radius: 10px;
-    transition: 0.6s ease-in-out;
-    background-color: rgb(209, 218, 216);
+.brand-logo,h2{
+  font-family: 'Grand Hotel', cursive;
 }
 
-.brand-logo, #nav-mobile {
-  color: #263238 !important;
-  font-family: 'Roboto', sans-serif;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin-left: 10px;
-  margin-bottom: 0px;
-  height: 50vh;
-  font-size: large;
-
-
+.mycard{
+  margin-top: 30px;
 }
-
-h6, h7 {
-  color: #EC0B43 !important;
-  font-family: 'Open Sans', sans-serif;
-}
-.brand-logo,
-h2 {
-  font-family: 'Fjalla One', sans-serif;
-  color: #263238;
-
-}
-
-.mycard {
-  margin-top: 10px;
-  border-radius: 50px;
-  padding-top: 50px;
-  background-color: #dcdddd;
-color: #263238;
-  text-align: center;
-  
-  
-}
-
-.auth-card {
+.auth-card{
   padding: 20px;
-  margin-top: 20px;
-  padding-top: 30px;
   text-align: center;
   max-width: 400px;
   margin: 10px auto;
-  border-radius: 58px;
-  background: linear-gradient(225deg, #ffffff, #dcdddd);
-  box-shadow:  7px 7px 51px #989c9a, 
-  -7px -7px 51px #ffffff;
-}
-
-input {
-  padding-left: 10px;
-  box-shadow:  -8px 8px 16px lightgrey, 
-               8px -8px 16px #ffffff
 }
 
 .input-field input[type=text]:focus {
-  border-bottom: 1px solid red !important;
-  box-shadow: 0 1px 0 0 whitesmoke !important;
-  margin-left: 10px;
-  padding-left: 10px;
+  border-bottom: 1px solid rgb(8, 93, 252) !important;
+  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
 }
-
 .input-field input[type=password]:focus {
-  border-bottom: 1px solid red !important;
-  box-shadow: 0 1px 0 0 whitesmoke !important;
-  margin-left: 10px;
-  padding-left: 10px;
+  border-bottom: 1px solid rgb(8, 93, 252) !important;
+  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
 }
 
-.gallery {
+.gallery{
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-
-.item {
+.item{
   width: 30%;
 }
 
-.home-card {
+.home-card{
   max-width: 500px;
   height: max-content;
   margin: 26px auto;
-
+  
 }
-
-.collection-item {
+.collection-item{
   width: 100%;
 }
 
 
-#toast-container {
-  top: 30px !important;
+#toast-container{
+  top:30px !important;
   right: 20px !important;
   left: auto !important;
 }
 
 
-.material-icons:hover {
-  cursor: progress;
-  
+.material-icons:hover{
+  cursor: pointer;
 }
-
-#signIn, .btn, #checkIn {
-  border-radius: 30px;
-  background:white;
-  font-weight: bold;
-  font-size: x-small;
-  color: #263238;
-  text-align: center;
-  
- 
-  margin: 5px 5px;
-  padding-bottom: 5px;
- 
-
-  text-align: center;
-  justify-content: space-evenly;
-
-  
-  box-shadow:  -8px 8px 16px lightgrey, 
-  8px -8px 16px lightgrey;
-
-  
-}
-
-a {
-  font-size: small;
-  text-transform: lowercase;
-  font-family: 'Fjalla One', sans-serif;
-  text-decoration: none;
-  font-style: oblique;
-  /* padding: 2px 2px;
-  margin: 2px 2px ;
-  align-items: center; */
-  color: #263238;
-  max-width: 10vw;
-  max-height: 10vh;
- 
-}
-
-/* a {
-  border-radius: 30px;
-  font-weight: bold;
-  font-size: small;
-  color: #EC0B43;
-  padding: 20px 20px;
-  text-transform: lowercase;
-  font-weight: bolder;
-  font-style: italic ;
-  box-shadow:  -8px 8px 16px lightgrey, 
-               8px -8px 16px lightgrey;
-} */
-
