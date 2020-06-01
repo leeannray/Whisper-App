@@ -1,8 +1,5 @@
-if(process.env.NODE_ENV==='production') {
+if(process.env.NODE_ENV==='production'){
   module.exports = require('./prod')
-}
-
-else {
+}else{
   module.exports = require('./dev')
 }
-// see setup for mongo db atlas and cloudinary
