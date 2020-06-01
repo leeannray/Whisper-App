@@ -1,60 +1,70 @@
-@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
-a{
+a {
   color: black !important;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
-.brand-logo,h2{
-  font-family: 'Grand Hotel', cursive;
+.brand-logo,
+h2 {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.mycard{
+.mycard {
   margin-top: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
 }
-.auth-card{
+
+.auth-card {
   padding: 20px;
   text-align: center;
   max-width: 400px;
   margin: 10px auto;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .input-field input[type=text]:focus {
   border-bottom: 1px solid rgb(8, 93, 252) !important;
-  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
-}
-.input-field input[type=password]:focus {
-  border-bottom: 1px solid rgb(8, 93, 252) !important;
-  box-shadow: 0 1px 0 0 rgb(8, 93, 252)  !important;
+  box-shadow: 0 1px 0 0 rgb(8, 93, 252) !important;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.gallery{
+.input-field input[type=password]:focus {
+  border-bottom: 1px solid rgb(8, 93, 252) !important;
+  box-shadow: 0 1px 0 0 rgb(8, 93, 252) !important;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 }
 
-.item{
+.item {
   width: 30%;
 }
 
-.home-card{
+.home-card {
   max-width: 500px;
   height: max-content;
   margin: 26px auto;
-  
+  font-family: 'Montserrat', sans-serif;
+
 }
-.collection-item{
+
+.collection-item {
   width: 100%;
 }
 
 
-#toast-container{
-  top:30px !important;
+#toast-container {
+  top: 30px !important;
   right: 20px !important;
   left: auto !important;
 }
 
 
-.material-icons:hover{
+.material-icons:hover {
   cursor: pointer;
 }
