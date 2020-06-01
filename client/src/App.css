@@ -1,35 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Condensed:ital,wght@0,400;0,700;1,300;1,400;1,700&display=swap');
 
 a {
-  color: black !important;
+  color: #2BA84A !important;
+  font-size: larger;
+  font-style: oblique;
   font-family: 'Roboto Condensed', sans-serif;
+  margin-left: 10px;
 }
 
-nav {
+.NavBar {
   background-color: white;
-  color: red;
+  color: #2D3A3A;
+  font-weight: bold;
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+  height: 10vh;
 }
 
-div {
-  background-image: url('../src/img/ralph-kayden-iZEG_9jaB40-unsplash.jpg')
+.card {
+  padding: 20px 20px;
+  margin: 20px 20px;
+  width: 50vw;
+}
+
+section {
+  background-image: url('../src/img/jj-ying-WmnsGyaFnCQ-unsplash\ \(1\).jpg');
+  padding: 20px 20px;
+  margin: 20px 20px;
 }
 
 .brand-logo,
 h2 {
   font-family: 'Montserrat', sans-serif;
+  color: #2D3A3A;
+  font-variant: small-caps;
+  font-size: 5em;
+  font-weight: 700;
+}
+
+.btn {
+  margin: 10px 10px;
+  background-color: white;
+  
 }
 
 .mycard {
-  background-color: whitesmoke;
-  color: red;
-  margin-top: 30px;
+  background-image: url('../src/img/jj-ying-WmnsGyaFnCQ-unsplash\ \(1\).jpg');
+  color: #2D3A3A;
+  font-weight: bolder;
+  height: 100vh;
+  width: 100vw;
+ margin-bottom: 0px;
+  padding: 10px 10px;
   font-family: 'Montserrat', sans-serif;
 }
 
 .auth-card {
-  padding: 20px;
+  padding: 10px 10px;
   text-align: center;
-  max-width: 400px;
+  align-items: center;
+  max-width: 50vw;
+  height: 80vh;
   margin: 10px auto;
   font-family: 'Montserrat', sans-serif;
 }
@@ -38,12 +69,17 @@ h2 {
   border-bottom: 1px solid darkgrey !important;
   box-shadow: 0 1px 0 0 darkgray !important;
   font-family: 'Montserrat', sans-serif;
+  align-content: center;
+  margin: 20px 20px;
+  padding: 10px 10px;
 }
 
 .input-field input[type=password]:focus {
   border-bottom: 1px solid darkgray !important;
   box-shadow: 0 1px 0 0 darkgray !important;
   font-family: 'Montserrat', sans-serif;
+  padding: 20px 20px;
+  margin: 10px 10px;
 }
 
 .gallery {
