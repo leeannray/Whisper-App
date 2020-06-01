@@ -44,7 +44,7 @@ h2 {
   max-width: 400px;
   margin: 10px auto;
   border-radius: 78px;
-  background-color: white;
+  background-color: #f2f2f2;
   box-shadow:  -8px 8px 16px lightgrey, 
                8px -8px 16px #ffffff;
 }
