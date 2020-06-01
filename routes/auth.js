@@ -31,12 +31,12 @@ router.post('/signup', (req, res) => {
     
     const { name, email, password, pic } = req.body
     if (!email || !password || !name) {
-        return res.status(422).json({ error: "Please fill all the fields." });
+        return res.status(422).json({ error: "Please check-in with name, email, and passphrase!" });
     }
     User.findOne({ email: email })
         .then((savedUser) => {
             if (savedUser) {
-                return res.status(422).json({ error: "User already exists with this email." });
+                return res.status(422).json({ error: "Someone with that email is already checked-in!" });
             }
             bcrypt.hash(password, 20)
                 .then(hashedpassword => {
@@ -55,7 +55,7 @@ router.post('/signup', (req, res) => {
                             //     subject:"signup success",
                             //     html:"<h1>welcome to instagram</h1>"
                             // })
-                            res.json({ message: "User saved successfully, now please log in again." })
+                            res.json({ message: "Thanks for registering! Please confirm your check-in…" })
                         })
                         // if any error
                         .catch(err => {
@@ -73,12 +73,12 @@ router.post('/signup', (req, res) => {
 router.post('/signin', (req, res) => {
     const { email, password } = req.body
     if (!email || !password) {
-        return res.status(422).json({ error: "Please add email or password." });
+        return res.status(422).json({ error: "Please check-in with your username and passphrase…" });
     }
     User.findOne({ email: email })
         .then(savedUser => {
             if (!savedUser) {
-                return res.status(422).json({ error: "Invalid email or password! Please try again." });
+                return res.status(422).json({ error: "Sorry--that information is incorrect! Please try again…" });
             }
             bcrypt.compare(password, savedUser.password)
                 .then(doMatch => {
@@ -89,7 +89,7 @@ router.post('/signin', (req, res) => {
                         res.json({ token, user: { _id, name, email, followers, following, pic } });
                     }
                     else {
-                        return res.status(422).json({ error: "Invalid email or password! Please try again." });
+                        return res.status(422).json({ error: "Sorry that check-in name and/or passphrase is incorrect! Please try again…" });
                     }
                 })
                 .catch(err => {
@@ -97,7 +97,5 @@ router.post('/signin', (req, res) => {
                 });
         });
 });
-
-
 
 module.exports = router

@@ -8,13 +8,13 @@ module.exports = (req, res, next) => {
     //authorization === Bearer ewefwegwrherhe
 
     if(!authorization) {
-       return res.status(401).json({ error:"Please check in!"})
+       return res.status(401).json({ error:"auth err"})
     }
 
     const token = authorization.replace("Bearer ", "")
     jwt.verify(token,JWT_SECRET, (err, payload) => {
         if(err) {
-         return res.status(401).json({error:"You are not checked in…"})
+         return res.status(401).json({error:"token err"})
         }
 
         const {_id} = payload
