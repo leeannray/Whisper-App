@@ -1,6 +1,6 @@
 # Whisper-App
 
-Whisper-ma-phone: a react and redux social app.
+Whisper-ma-phone: a react and redux social app for kids.
 
 Today is your day. 
 
@@ -10,10 +10,13 @@ Welcome to the waiting room…
 
 Whisper-Ma-Phone -- Our place.
 
-AS A developer I want to create an app to connect millenials with one another through posts that are secure/private (via validation and authentication methods) to share personal photos, comments, and private messages or chat rooms
-I WANT TO create an app for users to connect with one another through personal profiles
-SO THAT they can share positive messages during this unique time in our history through unique usernames, personal photos, posts, and ability to know what friends and potential new friends are up to in real-time
-IN ORDER TO walk through how to develop a React app (for developers) while also allowing users to connect with eachother through chatrooms/messages, photos, and posts
+AS A developer
+
+I WANT TO create a safe environment for kids to connect with one another in the forms of sharing photos, comments, and private messages or by creating chatrooms for them to connect with eachother
+
+SO THAT kids can feel safe, with eventual parental monitoring of such an app, by logging in with a secure username of their choosing and share their experiences with classmates in real-time
+
+IN ORDER TO for kids to see the opportunities the internet holds, as well as the excitement of the internet and what it takes to develop such apps (tutorials included as a long-term ICEBOX idea) while also allowing them to connect with eachother through chatrooms/messages, photos, and posts
 
 # This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
