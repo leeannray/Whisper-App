@@ -1,6 +1,6 @@
 # Whisper-App: Waiting Place
 
-Whisper: a react and redux social app for kids.
+Whisper: an MERN, react and redux, social app for kids.
 
 "Whisper-ma-phone"--Dr. Seuss
 
@@ -20,6 +20,10 @@ Forgot & Reset password
   - Cloudinary
   - MongoDb Atlas
   - Materialize
+  - Express
+  - React
+  - Node.js
+  - Mongoose
 
 # USER STORY
 
