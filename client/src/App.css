@@ -125,14 +125,14 @@ nav {
   font-family: 'Montserrat', sans-serif;
   align-content: center;
   margin: 20px 20px;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
 }
 
 .input-field input[type=password]:focus {
   border-bottom: 1px solid darkgray !important;
   box-shadow: 0 1px 0 0 darkgray !important;
   font-family: 'Montserrat', sans-serif;
-  padding: 20px 20px;
+  /* padding: 20px 20px; */
   margin: 20px 20px;
 }
 
