@@ -60,8 +60,8 @@ const SignIn = () => {
                 >
                     Check-In
             </button>
-                <div id="signIn">
-                <h5>
+            <div id="signIn">
+                <h5 >
                     <Link to="/signup">Join the Waitlist</Link>
                 </h5>
                 <h6>

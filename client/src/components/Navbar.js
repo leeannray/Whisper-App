@@ -62,7 +62,7 @@ const NavBar = () => {
   }
   return (
     <nav>
-      <div className="nav-wrapper blue-grey darken-4 box-shadow: 27px 27px 54px #489dcf">
+      <div className="nav-wrapper white box-shadow: 27px 27px 54px #489dcf">
         <Link to={state ? "/" : "/signin"} className="brand-logo left">Whisper</Link>
         <ul id="nav-mobile" className="right">
           {renderList()}
