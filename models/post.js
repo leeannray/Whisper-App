@@ -25,6 +25,8 @@ const postSchema = new mongoose.Schema( {
     }
 },
     { timestamps: true }
+    // true time
 )
 
 mongoose.model("Post", postSchema)
+// second arg?

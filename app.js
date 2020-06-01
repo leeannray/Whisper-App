@@ -1,26 +1,41 @@
 const express = require('express')
 const app = express()
-const PORT = 8000
+const PORT = process.env.PORT || 5000
+const mongoose  = require('mongoose')
 // port for server: DEFAULT IS PORT 3000 -->
+const {MONGOURI} = require('./config/keys')
 
-const customMiddleware = (req, res, next) => {
-  console.log("in the middle")
-  // middleware modify request (user) before reaching route handler
-  next()
-  // execute prior MW or next MW. request to / route
 
-  // try server
-}
-
-app.get('/', (req, res) =>
-{
-  res.send("hey seussers")
+mongoose.connect(MONGOURI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
 })
-// file path; get request. console.log for test
+// mongo db atlas
 
-app.listen(PORT, ()=> {
-  console.log('server listening hooray on', PORT)
+mongoose.connection.on('connected', () => {
+  console.log("In the middle…")
+})
+
+mongoose.connection.on('error', (err )=> {
+  console.log("Grrrr...not working…",err)
+})
+
+require('./models/user')
+require('./models/post')
+
+app.use(express.json())
+app.use(require('./routes/auth'))
+app.use(require('./routes/post'))
+app.use(require('./routes/user'))
+
+
+if(process.env.NODE_ENV == "production") {
+  app.use(express.static('client/build'))
+  const path = require('path')
+  app.get("*", (req, res) => {
+      res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'))
+  })
 }
-)
-// testing port 8000
+
+
 

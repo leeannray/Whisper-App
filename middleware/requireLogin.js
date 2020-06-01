@@ -1,11 +1,12 @@
 const jwt = require('jsonwebtoken')
 const { JWT_SECRET } = require('../config/keys')
+// keys set up --> must be long --> many numbers/letters (check exact?)
 const mongoose = require('mongoose')
 const User = mongoose.model("User")
 
 module.exports = (req, res, next) => {
     const { authorization } = req.headers
-    //authorization === Bearer ewefwegwrherhe
+    //authorization === Bearer ewefwegwrherhe --> check
     if(!authorization) {
        return res.status(401).json({ error:"Check in please!" })
     }
@@ -18,9 +19,11 @@ module.exports = (req, res, next) => {
         }
 
         const { _id } = payload
+        // payload
         User.findById(_id).then(userdata => {
             req.user = userdata
             next()
+            // shifts to next middleware
         })
     })
 }
