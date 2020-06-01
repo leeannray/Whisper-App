@@ -19,9 +19,16 @@
   "homepage": "https://github.com/kratuvwxyz/instagram-app#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.21.0",
+    "crypto": "^1.0.1",
     "express": "^4.17.1",
+    "express-router": "0.0.1",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.16"
+    "materialize": "^1.0.0",
+    "mongodb-atlas-api-client": "^2.2.0",
+    "mongoose": "^5.9.16",
+    "node": "^14.3.0",
+    "react": "^16.13.1"
   },
   "devDependencies": {}
 }

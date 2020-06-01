@@ -24,6 +24,9 @@ Forgot & Reset password
   - React
   - Node.js
   - Mongoose
+  - Bcrypt
+  - Crypto
+  - JWT
 
 # USER STORY
 
