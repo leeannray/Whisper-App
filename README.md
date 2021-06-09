@@ -9,21 +9,20 @@
 - App that allows teachers to interact with students, other teachers, parents, and kids searching for additional school-related resources, support, or advice
 - App that creates an online social but educational, "global", age-appropriate world for kids and teachers to share pictures, ideas, messages, resources, games, fun activities while remaining age-appropriate and allowing for parental and mentor/teacher monitoring
 
-"Whisper-ma-phone"--Dr. Seuss
 
-# This app covers
+# Details About App Development
 
-Building websites using MERN stack
-Image Uploading
-Creating APIs in Node js
-Testing endpoints using postman
-Context API for state managemant
-JWT based authentication
-Deploy to heroku
-Sending Email using nodemailer & sendgrid
-Forgot & Reset password
+- MERN stack
+- Image uploading
+- APIs created in Node js
+- Endpoints tested using postman
+- Context API for state management
+- JWT based authentication
+- Deployed via Heroku
+- Email sending using Nodemailer & Sendgrid
+- "Forgot" and "Reset" password option availability 
 
-# This app uses:
+# This App Was Built Using:
   - Cloudinary
   - MongoDb Atlas
   - Materialize
@@ -36,8 +35,8 @@ Forgot & Reset password
   - JWT
 
 # USER STORY
-
-The Waiting Place: a Social Media Platform for Kids
+## Whisper: a Social Media Platform for Kids
+### The Waiting Place
 
 AS A developer
 
