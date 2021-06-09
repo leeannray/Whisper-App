@@ -88,7 +88,9 @@ Your app is ready to be deployed!
 
 - [MIT](https://github.com/leeannray/LICENSE) © 2021 Lee Ann Ray.
 
-### CONTACT
+#### CONTACT
 
-Thank you for exploring my apps and projects! My mantra: *chase perfection to catch excellence*. I hope you enjoy my work and would love to hear from you. **Please email me at:** <a href="mailto:leeann.n.ray@gmail.com?Subject=Message from Github">leeann.n.ray@gmail.com</a>.
+Thank you for exploring my apps and projects! My mantra: *chase perfection to catch excellence*. I hope you enjoy my work and would love to hear from you. 
+
+**Email:** <a href="mailto:leeann.n.ray@gmail.com?Subject=Message from Github">leeann.n.ray@gmail.com</a>.
 
