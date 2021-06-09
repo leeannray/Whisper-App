@@ -44,40 +44,38 @@ I WANT TO create a safe environment for kids to connect with one another in the 
 
 SO THAT kids can feel safe, with eventual parental monitoring of such an app, by logging in with a secure username of their choosing and share their experiences with classmates in real-time
 
-IN ORDER TO for kids to see the opportunities the internet holds, as well as the excitement of the internet and what it takes to develop such apps (tutorials included as a long-term ICEBOX idea) while also allowing them to connect with eachother through chatrooms/messages, photos, and posts
+IN ORDER FOR kids to see the opportunities the internet holds, as well as the excitement of the internet and what it takes to develop such apps (tutorials included as a long-term ICEBOX idea) while also allowing them to connect with eachother through chatrooms/messages, photos, and posts
 
-# Credits
-- This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Additional Notes
+### This App was:  
 
-- This app was created using React by the amazing people at Facebook: many thanks
+- Bootstrapped via [Create React App](https://github.com/facebook/create-react-app).
+- Created using React by the amazing people at Facebook: thank you!
 
-ALSO:
-- React
+## Credits
 - Stephen Grider (Udemy)
 - Mukesh Phulwani (Udemy)
 - Dr. Seuss
+- Shel Silverstein
 - The React team at Facebook
 
 ## Available Scripts
 
-In the project directory, you can run:
+In th project directory, run:
 
 ### `npm start`
-
-Runs the app in the development mode.<br />
+To run the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br />
 You will also see any lint errors in the console.
 
-
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
+To build the app for production into the `build` folder.<br />
+- Will correctly bundle React in production mode and optimize the build for the best performance.
+- The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### See section: [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
