@@ -1,4 +1,4 @@
-# Whisper: a Social Media App for Kids by Lee Ann Ray <center><img src="/images/givingtree.jpg" alt="The Giving Tree Illustration by Shel Silverstein" width="600px" />
+# Whisper: a Social Media App for Kids by Lee Ann Ray <center><img src="/images/givingtree.jpg" alt="The Poet's Tree Illustration by Shel Silverstein" width="600px" />
 
  Whisper: A Social Media App built using MongoDB, React and Redux, Express, Node.js, and Express!
 - App that allows kids to share user-appropriate images with one another
@@ -36,7 +36,7 @@
 
 # USER STORY
 ## Whisper: a Social Media Platform for Kids
-### The Waiting Place
+### The Giving Tree <img src="/images/project-image.jpg" alt="The Giving Tree by Shel Silverstein" width="200px" />
 
 AS A developer
 
