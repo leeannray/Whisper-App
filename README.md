@@ -36,7 +36,7 @@
 
 # USER STORY
 ## Whisper: a Social Media Platform for Kids
-### The Giving Tree <img src="/images/project-image.jpg" alt="The Giving Tree by Shel Silverstein" width="600px" />
+### <img src="/images/project-image.jpg" alt="The Giving Tree by Shel Silverstein" width="600px" />
 
 AS A developer
 
