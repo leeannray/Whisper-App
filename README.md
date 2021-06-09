@@ -7,7 +7,7 @@
 - App that is appropriate for kids aged 8-16 years
 - App that can be monitored by teachers
 - App that allows teachers to interact with students, other teachers, parents, and kids searching for additional school-related resources, support, or advice
-- App that creates an online social but educational, "global", age-appropriate world for kids and teachers to share pictures, ideas, messages, resources, games, fun activities while remaining age-appropriate and allowing for parental and mentor/teacher monitoring
+- App that creates an online, social but educational, "global", age-appropriate world for kids and teachers to share pictures, ideas, messages, resources, games, fun activities while remaining age-appropriate and allowing for parental and mentor/teacher monitoring
 
 
 # Details About App Development
