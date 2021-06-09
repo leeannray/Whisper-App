@@ -1,6 +1,13 @@
-# Whisper-App: Waiting Place
+# Whisper <img src="" /> by Lee Ann Ray
 
-Whisper: an MERN, react and redux, social app for kids.
+Whisper: a social media app for kids built using MongoDB, React and Redux, Express, Node.js, and Express!
+- App that allows kids to share user-appropriate images with one another
+- App that encourages learning, sharing of resources, and collaboration with peers
+- App that allows users to chat with one another in user-appropriate ways
+- App that is appropriate for kids aged 8-16 years
+- App that can be monitored by teachers
+- App that allows teachers to interact with students, other teachers, parents, and kids searching for additional school-related resources, support, or advice
+- App that allows for a social but educational, "global", age-appropriate world for kids and teachers to share pictures, ideas, messages, resources, games, fun activities while remaining age-appropriate and allowing for parental and mentor/teacher monitoring
 
 "Whisper-ma-phone"--Dr. Seuss
 
@@ -9,7 +16,7 @@ Whisper: an MERN, react and redux, social app for kids.
 Building websites using MERN stack
 Image Uploading
 Creating APIs in Node js
-Testing end points using postman
+Testing endpoints using postman
 Context API for state managemant
 JWT based authentication
 Deploy to heroku
