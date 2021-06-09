@@ -52,6 +52,11 @@ IN ORDER FOR kids to see the opportunities the internet holds, as well as the ex
 - Bootstrapped via [Create React App](https://github.com/facebook/create-react-app).
 - Created using React by the amazing people at Facebook: thank you!
 
+### Software
+
+- Visual Studio Code Editor
+- Github for versioning
+
 ## Credits
 - Stephen Grider (Udemy)
 - Mukesh Phulwani (Udemy)
@@ -78,4 +83,12 @@ To build the app for production into the `build` folder.<br />
 Your app is ready to be deployed!
 
 ### See section: [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+#### LICENSE
+
+- [MIT](https://github.com/leeannray/LICENSE) © 2021 Lee Ann Ray.
+
+### CONTACT
+
+Thank you for exploring my apps and projects! My mantra: *chase perfection to catch excellence*. I hope you enjoy my work and would love to hear from you. **Please email me at:** <a href="mailto:leeann.n.ray@gmail.com?Subject=Message from Github">leeann.n.ray@gmail.com</a>.
 
