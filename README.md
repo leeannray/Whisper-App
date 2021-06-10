@@ -2,7 +2,7 @@
 
 # <center><img src="/images/givingtree.jpg" alt="The Poet's Tree Illustration by Shel Silverstein" width="600px" />
 
- Whisper: A Social Media App built using MongoDB, React and Redux, Express, Node.js, and Express!
+ ## Whisper: A Social Media App built using MongoDB, React and Redux, Express, Node.js, and Express!
 - App that allows kids to share user-appropriate images with one another
 - App that encourages learning, sharing of resources, and collaboration with peers
 - App that allows users to chat with one another in user-appropriate ways
