@@ -82,7 +82,7 @@ To build the app for production into the `build` folder.<br />
 - The build is minified and the filenames include the hashes.<br />
 Your app is ready to be deployed!
 
-### See section: [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### See [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 #### LICENSE
 
