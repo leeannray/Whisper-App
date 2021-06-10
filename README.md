@@ -38,13 +38,14 @@
 ## Whisper: a Social Media Platform for Kids
 ### <img src="/images/project-image.jpg" alt="The Giving Tree by Shel Silverstein" width="600px" />
 
-AS A developer
+**AS A** developer
 
-I WANT TO create a safe environment for kids to connect with one another in the forms of sharing photos, comments, and private messages or by creating chatrooms for them to connect with eachother
+**I WANT** TO create a safe environment for kids to connect with one another in the forms of sharing photos, comments, and private messages or by creating chatrooms for them to connect with eachother
 
-SO THAT kids can feel safe, with eventual parental monitoring of such an app, by logging in with a secure username of their choosing and share their experiences with classmates in real-time
+**SO THAT** kids can feel safe, with eventual parental monitoring of such an app, by logging in with a secure username of their choosing and share their experiences with classmates in real-time
 
-IN ORDER FOR kids to see the opportunities the internet holds, as well as the excitement of the internet and what it takes to develop such apps (tutorials included as a long-term ICEBOX idea) while also allowing them to connect with eachother through chatrooms/messages, photos, and posts
+**IN ORDER FOR** kids to see the opportunities the internet holds, as well as the excitement of the internet and what it takes to develop such apps (tutorials included as a long-term ICEBOX idea) while also allowing them to connect with eachother through chatrooms/messages, photos, and posts
+
 
 ## Additional Notes
 #### Whisper App:  
