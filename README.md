@@ -35,9 +35,9 @@
   - JWT
 
 # USER STORY
-## Whisper: a Social Media Platform for Kids
 ### <img src="/images/project-image.jpg" alt="The Giving Tree by Shel Silverstein" width="600px" />
 
+## Whisper: a Social Media Platform for Kids
 **AS A** developer
 
 **I WANT** TO create a safe environment for kids to connect with one another in the forms of sharing photos, comments, and private messages or by creating chatrooms for them to connect with eachother
