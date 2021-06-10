@@ -47,12 +47,12 @@ SO THAT kids can feel safe, with eventual parental monitoring of such an app, by
 IN ORDER FOR kids to see the opportunities the internet holds, as well as the excitement of the internet and what it takes to develop such apps (tutorials included as a long-term ICEBOX idea) while also allowing them to connect with eachother through chatrooms/messages, photos, and posts
 
 ## Additional Notes
-### This App was:  
+#### This App was:  
 
 - Bootstrapped via [Create React App](https://github.com/facebook/create-react-app).
 - Created using React by the amazing people at Facebook: thank you!
 
-### Software
+#### Software
 
 - Visual Studio Code Editor
 - Github for versioning
