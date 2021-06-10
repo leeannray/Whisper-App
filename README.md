@@ -66,7 +66,7 @@ IN ORDER FOR kids to see the opportunities the internet holds, as well as the ex
 
 ## Available Scripts
 
-In th project directory, run:
+In the project directory, run:
 
 ### `npm start`
 To run the app in the development mode.<br />
