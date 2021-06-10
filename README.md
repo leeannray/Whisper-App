@@ -88,6 +88,7 @@ Your app is ready to be deployed!
 
 - [MIT](https://github.com/leeannray/LICENSE) © 2021 Lee Ann Ray.
 
+
 ### CONTACT
 
 Thank you for exploring my apps and projects! I hope you enjoy my work and would love to hear from you.
